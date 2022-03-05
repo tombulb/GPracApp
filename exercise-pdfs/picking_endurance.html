@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ya'll playing some guitar?</title>
+    <link rel="stylesheet" href="exercise-style.css">
+</head>
+
+<body>
+    <div class=content-wrapper>
+        <header>
+            <h1>Time for Guitar Practice</h1>
+            <h2><a href="../index.html">HOME</a></h2>
+        </header>
+
+        <div class="exercise">
+            <iframe class="exercise-pdf" src="https://drive.google.com/file/d/1ezp3EhygqGo6cFEaB7VQBG6VkAHevv2n/preview" allow="autoplay"></iframe>
+        </div>
+
+        <div class="metronome-wrapper">
+            <div class="title">Metronome</div>
+            <button id="play-button" class="">play</button>
+
+            <div class="tempo-controls">
+                <button class="tempo-change" data-change="-5">-5</button>
+                <button class="tempo-change" data-change="-1">-</button>
+
+                <div class="tempo-container">
+                    <div id="tempo">120</div>
+                    <div class="bpm">bpm</div>
+                </div>
+
+                <button class="tempo-change" data-change="+1">+</button>
+                <button class="tempo-change" data-change="+5">+5</button>
+            </div>
+
+            <div class="created-by">
+                Metronome created by <a href="https://grantjam.es" target="_blank">Grant James</a> and used without permission.
+            </div>
+        </div>
+    </div>
+
+
+    <script src="metronome.js"></script>
+    <script src="../app.js"></script>
+
+</body>
+
+</html>
